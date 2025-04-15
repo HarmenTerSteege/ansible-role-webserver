@@ -1,0 +1,17 @@
+galaxy_info:
+  author: HarmenTerSteege
+  description: Installeert een Apache webserver met PHP en PHP-MySQL op Ubuntu.
+  company: ""
+  license: MIT
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - 20.04
+        - 22.04
+        - 24.04
+
+  role_name: webserver
+
+dependencies: []
