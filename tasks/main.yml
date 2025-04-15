@@ -1,0 +1,24 @@
+---
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install Apache
+  apt:
+    name: apache2
+    state: present
+    update_cache: yes
+
+- name: Install PHP and PHP-MySQL
+  apt:
+    name:
+      - php
+      - php-mysql
+    state: present
+    update_cache: yes
+
+- name: Ensure apache is running
+  service:
+    name: apache2
+    state: started
+    enabled: yes
